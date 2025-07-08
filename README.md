@@ -62,8 +62,8 @@ wget https://download.qemu.org/qemu-8.2.2.tar.xz
 tar xvJf qemu-8.2.2.tar.xz
 cd qemu-8.2.2
 git apply ../qemu-anti-detection/qemu-8.2.0.patch
-git apply ../qemu-anti-detection/qemu-9.2.0-libnfs6.patch
-git apply ../qemu-anti-detection/qemu-9.2.0-sysc.patch
+git apply ../qemu-anti-detection/qemu-8.2.0-libnfs6.patch
+git apply ../qemu-anti-detection/qemu-8.2.0-sysc.patch
 ./configure
 sudo make install -j$(nproc)
 ```
